@@ -6,12 +6,12 @@ This project is a **FastAPI and Streamlit-based web application** that allows us
 - **Ask questions** about the content of a PDF and receive relevant answers.
 
 ## 🚀 Features
-✅ Upload a **PDF document** (one-time upload for both summarization and QA).
-✅ Generate **different summaries** every time you run summarization.
-✅ Perform **detailed summarization** for more insightful results.
-✅ Ask **questions related to the PDF** and get precise answers.
-✅ Uses **LangChain**, **Hugging Face embeddings**, and **FAISS** for retrieval.
-✅ Frontend built with **Streamlit** for a smooth user experience.
+- Upload a **PDF document** (one-time upload for both summarization and QA).
+- Generate **different summaries** every time you run summarization.
+- Perform **detailed summarization** for more insightful results.
+- Ask **questions related to the PDF** and get precise answers.
+- Uses **LangChain**, **Hugging Face embeddings**, and **FAISS** for retrieval.
+- Frontend built with **Streamlit** for a smooth user experience.
 
 ---
 
@@ -58,15 +58,15 @@ streamlit run client.py
 ---
 
 ## 🔄 Workflow (How it Works?)
-1️⃣ **User uploads a PDF** (file is stored temporarily).
-2️⃣ **User selects:**
+1️. **User uploads a PDF** (file is stored temporarily).
+2️. **User selects:**
    - "Summarize" → Calls FastAPI `/summarize/` endpoint to generate a summary.
    - "Ask a Question" → Calls `/ask/` endpoint with the query to get a response.
-3️⃣ **FastAPI processes the request** using:
+3️. **FastAPI processes the request** using:
    - LangChain for text processing
    - FAISS for document retrieval (for QA)
    - Groq / Hugging Face models for LLM responses
-4️⃣ **Response is displayed** on the Streamlit UI.
+4️. **Response is displayed** on the Streamlit UI.
 
 ---
 
