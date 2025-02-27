@@ -1,4 +1,6 @@
 lxml
+fastapi
+uvicorn
 langchain
 ipykernel
 python-dotenv
