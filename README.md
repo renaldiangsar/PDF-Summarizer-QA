@@ -58,15 +58,15 @@ streamlit run client.py
 ---
 
 ## 🔄 Workflow (How it Works?)
-1️. **User uploads a PDF** (file is stored temporarily).
-2️. **User selects:**
+1. **User uploads a PDF** (file is stored temporarily).
+2. **User selects:**
    - "Summarize" → Calls FastAPI `/summarize/` endpoint to generate a summary.
    - "Ask a Question" → Calls `/ask/` endpoint with the query to get a response.
-3️. **FastAPI processes the request** using:
+3. **FastAPI processes the request** using:
    - LangChain for text processing
    - FAISS for document retrieval (for QA)
    - Groq / Hugging Face models for LLM responses
-4️. **Response is displayed** on the Streamlit UI.
+4. **Response is displayed** on the Streamlit UI.
 
 ---
 
